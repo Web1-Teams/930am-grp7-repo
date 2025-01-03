@@ -1,38 +1,458 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: 'Poppins', Arial, sans-serif; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo {
+    display: inline-block; 
+    margin-right: 20px; 
 }
 
-.App-link {
-  color: #61dafb;
+.logo-image {
+    max-width: 300px; 
+    height: auto; 
+    display: block; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header */
+header {
+    background: #f8f9fb;
+    color: white;
+    padding: 20px;}
+
+header nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400; 
 }
+
+.search-bar input {
+    padding: 5px;
+}
+
+
+.hero {
+    background: #f3f3f3;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+}
+
+.categories, .featured-products, .health-articles {
+    padding: 20px;
+}
+
+.category-list, .product-list {
+    display: flex;
+    gap: 20px;
+}
+
+.category, .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Footer */
+footer {
+    background: #5292f0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+header nav {
+    display: flex;
+    gap: 15px; 
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px 15px; 
+    color: #ffffff; 
+    background-color: #548af7; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+header nav a:hover {
+    background-color: #5c82f3; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
+}
+
+header nav a:active {
+    transform: scale(0.98); 
+    background-color: #4c7ff7; 
+}
+.search-bar {
+    position: relative; 
+    width: 300px;
+    margin-left: auto; 
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px; 
+    border: 2px solid #285af3; 
+    border-radius: 20px; 
+    outline: none; 
+    font-size: 1rem;
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.search-bar input::placeholder {
+    color: #999; 
+    font-style: italic; 
+}
+
+.search-bar input:focus {
+    border-color: #4678f8; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    background-color: #f8f9ff; 
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #4a6ed8; 
+    pointer-events: none; 
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background: #f3f3f3;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Category Section */
+.categories {
+    padding: 20px;
+    text-align: center;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.category {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+/* Individual Product Item */
+.product {
+    width: 200px; 
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.product button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #257cfe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #6280a1;
+}
+
+/* Hover effect for Product */
+.product:hover {
+    transform: scale(1.05);
+    background-color: #e0e0e0;
+}
+/* Apply custom font to the body and cart button */
+body, .cart button {
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* Style the Cart Button */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global font application */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* All Add to Cart buttons */
+.add-to-cart {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 10px; 
+    background-color: #0b0b0a; 
+    color: rgb(10, 10, 10); 
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a 3D effect */
+    transition: all 0.3s ease; 
+}
+
+/* Hover effect to enhance the button on hover */
+.add-to-cart:hover {
+    background-color: #ff6347; /* Change color slightly */
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+
+.add-to-cart:focus {
+    outline: none; 
+    box-shadow: 0 0 0 4px rgba(255, 99, 71, 0.3); 
+}
+
+
+.add-to-cart {
+    animation: bounce 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+main {
+    margin-top: 30px; 
+}
+
+
+.categories h2 {
+    margin-top: 30px; 
+}
+
+.category-list {
+    margin-top: 40px; 
+}
+
+.featured-products {
+    margin-top: 30px; 
+}
+
+.featured-products h2 {
+    margin-top: 30px; 
+}
+
+
+.product-list {
+    margin-top: 40px; 
+}
+/* Category list styling */
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Category styling */
+.category {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Icon size and color */
+.category i {
+    font-size: 40px;
+    color: #0d6efd;
+    transition: color 0.3s ease;
+}
+
+/* Category text styling */
+.category span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Hover effects */
+.category:hover {
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+}
+
+.category:hover i {
+    color: #0b5ed7;
+}
+
+.category:hover span {
+    color: #0b5ed7;
+}
+
+/* Mobile responsiveness: Stack categories vertically on smaller screens */
+@media (max-width: 768px) {
+    .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Styling for the hero section */
+.hero {
+    background-image: url('medicine-capsules-global-health-with-geometric-pattern-digital-remix.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    color: white;
+    text-align: center;
+    padding: 80px 20px; 
+    height: 100vh; 
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 20px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+.logo-image {
+    max-width: 200px; 
+    height: auto;
+    display: block;
+}
+
+header {
+    padding: 10px; 
+}
+
+header nav a {
+    padding: 8px 12px; 
+    font-size: 0.9rem; 
+}
+
+.search-bar {
+    width: 250px;
+}  
