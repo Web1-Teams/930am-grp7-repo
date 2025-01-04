@@ -7,7 +7,8 @@ import FeaturedProducts from './components/FeaturedProducts';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-import Amal from './components/Amal';
+import HealthArticle from './components/healthArticle';
+
 import './App.css';
 
 const App = () => {
@@ -28,9 +29,13 @@ const App = () => {
               </>
             }
           />
-          <Route path="/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems} />} />
+          <Route 
+            path="/cart" 
+            element={<Cart cartItems={cartItems} setCartItems={setCartItems} />} 
+          />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/Amal" element={<Amal />} />
+          <Route path="/healthArticle" element={<HealthArticle />} />
+
         </Routes>
         <Footer />
       </div>
