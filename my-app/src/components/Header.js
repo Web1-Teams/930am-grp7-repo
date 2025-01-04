@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchProducts from './SearchProducts';
-
+import React, { useState } from "react";
 
 const Header = () => {
+  const [searchQuery, setSearchQuery] = useState("");
   return (
     <header>
       <div className="container">
@@ -22,7 +23,7 @@ const Header = () => {
           <Link to="/Amal">sign up</Link>
         </nav>
         <div className="search-bar">
-          <SearchProducts />
+           <SearchProducts setSearchQuery={setSearchQuery} />
         </div>
       </div>
     </header>
