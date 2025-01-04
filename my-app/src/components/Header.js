@@ -1,21 +1,25 @@
-// src/components/Header.js
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+
 
 const Header = () => {
   return (
     <header>
       <div className="container">
         <div className="logo">
-        <img src="upscaled-upscaled-Screenshot_2024-12-06_133842-removebg-preview.png" alt="Logo" className="logo-image" />
-
+          <img
+            src="upscaled-upscaled-Screenshot_2024-12-06_133842-removebg-preview.png"
+            alt="Logo"
+            className="logo-image"
+          />
         </div>
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Categories</a>
-          <a href="#">Health Articles</a>
-          <a href="#">Account</a>
-          <a href="#">Cart</a>
-          <a href="#">Contact</a>
+          
+          <Link to="/">Home</Link>
+          <Link to="/cart">Cart</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/Amal">sign up</Link>
         </nav>
         <div className="search-bar">
           <input type="text" placeholder="Search for products..." />
@@ -23,6 +27,6 @@ const Header = () => {
       </div>
     </header>
   );
-}
+};
 
 export default Header;
