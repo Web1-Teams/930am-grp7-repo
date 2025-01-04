@@ -3,7 +3,6 @@ import React from "react";
 function SearchProducts ({setSearchQuery}) { 
   return (
 
-
     <input
       type="text"
       placeholder="Search for products..."
