@@ -83,5 +83,6 @@ Device Compatibility: Responsive design works on desktops and smartphones.
 
 ## videos 
 https://github.com/user-attachments/assets/6c0e065a-bc57-4b3e-8d53-6aebb74445c3
-
+## site map
+  <img src="https://github.com/user-attachments/assets/164ee30a-9ac5-4beb-a2d2-e1487661124d">
 
