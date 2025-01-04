@@ -1,17 +1,27 @@
 # 930am-grp7-repo
 # Online Pharmacy Web Application
+# موقع صيدلية إلكترونية
 
-This project is a responsive web application for an online pharmacy. It allows users to browse products by categories, view featured items, and navigate an intuitive interface designed for medical product searches.
+This project is a responsive web application for an online pharmacy.
+It allows users to browse products by categories , view featured items, and navigate an intuitive interface designed for medical product searches .
 
+هذا المشروع عبارة عن تطبيق ويب متجاوب لصيدلية إلكترونية .
+يتيح للمستخدمين تصفح المنتجات حسب الفئات، عرض العناصر المميزة ، والتفاعل مع واجهة مستخدم مصممة لتسهيل البحث عن المنتجات الطبية
 ---
 
-## Description
+## Description | الوصف
 
 The web application provides:
 - A modern interface for browsing medical products.
 - Categories like Medicines, Personal Care, Supplements, and Skin Care.
 - Featured products section for highlighting key items.
+  
 
+
+يوفر تطبيق الويب:
+- واجهة حديثة لتصفح المنتجات الطبية.
+- فئات مثل الأدوية والعناية الشخصية والمكملات الغذائية والعناية بالبشرة.
+- قسم المنتجات المميزة لتسليط الضوء على العناصر الرئيسية.
 ---
 
 ## Tech Stack
@@ -22,7 +32,7 @@ The web application provides:
 
 ---
 
-## Installation
+## Installation 
 
 Follow these steps to run the project locally:
 
@@ -30,6 +40,39 @@ Follow these steps to run the project locally:
    ```bash
     git clone https://github.com/your-username/project-name.git
    
-## screenshots
-[View Screenshot of Home Page](./assets/screenshot.png)
+## screenshots | لقطات شاشة
+home page <img src="https://github.com/user-attachments/assets/7b01a36d-0443-4e8f-a7e5-ff7cf8aa4ded">
+           <img src="https://github.com/user-attachments/assets/4195212b-5b7a-4b5c-8b01-58bc1a7c1ca3">
+           <img src="https://github.com/user-attachments/assets/b3426c4b-80b2-4b97-96c3-9dd7f57f890d">
+cart 
+contact
+sign up
+categories
+health articles
+
+## Main Features | الميزات الرئيسية
+
+واجهة تفاعلية: تصميم جذاب وسهل التصفح للمستخدمين.
+
+تقسيم المنتجات: فئات واضحة مثل الأدوية والعناية بالبشرة.
+
+إظهار المنتجات المميزة: قائمة بالمنتجات الأكثر طلبًا.
+
+إضافة الصور والفيديوهات: عرض المنتجات بطريقة مرئية واضحة.
+
+سهولة البحث: إمكانية البحث عن المنتجات بسرعة.
+
+متوافق مع جميع الأجهزة: تصميم متجاوب يعمل على الحواسيب والهواتف الذكية.
+
+Interactive Interface: Attractive and easy-to-navigate design for users.
+
+Product Categories: Clear sections like Medicines and Skin Care.
+
+Featured Products Display: A list of the most requested products.
+
+Image and Video Integration: Visual representation of products.
+
+Quick Search Functionality: Quickly find products.
+
+Device Compatibility: Responsive design works on desktops and smartphones.
 
