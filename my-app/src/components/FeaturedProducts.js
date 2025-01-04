@@ -1,9 +1,8 @@
-// src/components/FeaturedProducts.js
 import React from 'react';
 
-const FeaturedProducts = () => {
+const FeaturedProducts = ({ cartItems, setCartItems }) => {
   const products = [
-    { name: 'Antihistamines', description: ' Relieve allergy symptoms by blocking histamine action', img: 'download (1).jpeg' },
+    { name: 'Antihistamines', description: 'Relieve allergy symptoms by blocking histamine action', img: 'download (1).jpeg' },
     { name: 'Ibuprofen', description: 'Non-steroidal anti-inflammatory drug (NSAID) for pain ', img: 'download.jpeg' },
     { name: 'Morphine', description: 'Strong opioid pain reliever for severe pain', img: '222222.jpeg' },
     { name: 'Paracetamol', description: 'Common pain reliever and fever reducer', img: 'ndn.jpeg' },
@@ -16,11 +15,11 @@ const FeaturedProducts = () => {
     { name: 'Insulin', description: 'Hormone therapy for diabetes, regulates blood sugar', img: 'insulin-faqs-2.jpg' },
     { name: 'Levothyroxine', description: 'Treats hypothyroidism by replacing thyroid hormone', img: 'empower-pharmacy-commercial-levothyroxine-sodium-tablets-75-mcg-294x490.jpg' },
 
-
-
-
-
   ];
+
+  const handleAddToCart = (product) => {
+    setCartItems([...cartItems, product]);
+  };
 
   return (
     <section className="featured-products">
@@ -31,12 +30,14 @@ const FeaturedProducts = () => {
             <img src={product.img} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.description}</p>
-            <button className="add-to-cart">Add to Cart</button>
+            <button className="add-to-cart" onClick={() => handleAddToCart(product)}>
+              Add to Cart
+            </button>
           </div>
         ))}
       </div>
     </section>
   );
-}
+};
 
 export default FeaturedProducts;
