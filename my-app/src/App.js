@@ -1,5 +1,5 @@
 import React from "react";
-import Amal from "./amal"; 
+import Amal from "./Amal"; 
 
 function App() {
   return (
