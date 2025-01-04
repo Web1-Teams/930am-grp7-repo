@@ -1,5 +1,4 @@
 import React from "react";
-
 function SearchProducts ({setSearchQuery}) { 
   return (
     <input
@@ -9,5 +8,4 @@ function SearchProducts ({setSearchQuery}) {
     />
   );
 }
-
 export default SearchProducts;     
