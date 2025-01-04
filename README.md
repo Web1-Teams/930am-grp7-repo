@@ -44,8 +44,8 @@ Follow these steps to run the project locally:
 home page <img src="https://github.com/user-attachments/assets/7b01a36d-0443-4e8f-a7e5-ff7cf8aa4ded">
            <img src="https://github.com/user-attachments/assets/4195212b-5b7a-4b5c-8b01-58bc1a7c1ca3">
            <img src="https://github.com/user-attachments/assets/b3426c4b-80b2-4b97-96c3-9dd7f57f890d">
-cart 
-contact
+cart <img src="https://github.com/user-attachments/assets/9bf66421-779a-4552-95eb-be4b4c085153">
+contact <img src="https://github.com/user-attachments/assets/77d1fe7e-aba2-4f69-95bd-44f677bebcc5">
 sign up
 categories
 health articles
