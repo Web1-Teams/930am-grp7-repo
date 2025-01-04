@@ -1,12 +1,16 @@
 # 930am-grp7-repo
-# Online Pharmacy Web Application
-# موقع صيدلية إلكترونية
+# Online Pharmacy Web Application ( al amal pharmacy )
+# موقع صيدلية إلكترونية ( صيدلية الأمل )
 
 This project is a responsive web application for an online pharmacy.
-It allows users to browse products by categories , view featured items, and navigate an intuitive interface designed for medical product searches .
 
-هذا المشروع عبارة عن تطبيق ويب متجاوب لصيدلية إلكترونية .
-يتيح للمستخدمين تصفح المنتجات حسب الفئات، عرض العناصر المميزة ، والتفاعل مع واجهة مستخدم مصممة لتسهيل البحث عن المنتجات الطبية
+It allows users to browse products by categories , view featured items , and navigate
+
+an intuitive interface designed for medical product searches .
+
+هذا المشروع عبارة عن تطبيق ويب متجاوب لصيدلية إلكترونية 
+يتيح للمستخدمين تصفح المنتجات حسب الفئات ، عرض العناصر المميزة 
+والتفاعل مع واجهة مستخدم مصممة لتسهيل البحث عن المنتجات الطبية..
 ---
 
 ## Description | الوصف
@@ -49,11 +53,15 @@ contact <img src="https://github.com/user-attachments/assets/9bf66421-779a-4552-
 sign up<img src="https://github.com/user-attachments/assets/f51a96ad-41b0-4b5b-80b1-99a2ee4e3157">
        <img src="https://github.com/user-attachments/assets/e0e6404d-0625-4a2b-afcf-019999d35911">
        <img src="https://github.com/user-attachments/assets/fb982658-a119-4386-9f6d-5cd1b5ff6c84">
-categories
 
-health articles
+health articles<img src="https://github.com/user-attachments/assets/81d5690e-bb53-420a-878e-db51f7eb9402">
 
 search bar
+
+
+<img src="https://github.com/user-attachments/assets/030aa6a9-c31e-47e8-ac73-8a4041769df9">
+
+categories
 
 ## Main Features | الميزات الرئيسية
 
