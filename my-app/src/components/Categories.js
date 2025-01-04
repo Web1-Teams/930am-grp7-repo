@@ -20,7 +20,7 @@ const Categories = () => {
         {categories.map((category, index) => (
           <div
             key={index}
-            className={`category ${selectedCategory === category.name ? 'active' : ''}`}
+            className={category ${selectedCategory === category.name ? 'active' : ''}}
             onClick={() => setSelectedCategory(category.name)}
           >
             <i className={category.icon}></i>
