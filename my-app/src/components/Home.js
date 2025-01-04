@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryList from "./components/CategoryList";
+import CategoryList from  "./components/CategoryList" ;
 
 const categories = [
   { id: 1, name: "Medicines" },
