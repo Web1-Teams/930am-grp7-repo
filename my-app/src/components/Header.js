@@ -21,6 +21,8 @@ const Header = () => {
           <Link to="/cart">Cart</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/Amal">sign up</Link>
+          <Link to="/healthArticle">Health Article</Link>
+  
         </nav>
         <div className="search-bar">
            <SearchProducts setSearchQuery={setSearchQuery} />
