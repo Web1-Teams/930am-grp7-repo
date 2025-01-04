@@ -46,9 +46,14 @@ home page <img src="https://github.com/user-attachments/assets/7b01a36d-0443-4e8
            <img src="https://github.com/user-attachments/assets/b3426c4b-80b2-4b97-96c3-9dd7f57f890d">
 cart <img src="https://github.com/user-attachments/assets/77d1fe7e-aba2-4f69-95bd-44f677bebcc5">
 contact <img src="https://github.com/user-attachments/assets/9bf66421-779a-4552-95eb-be4b4c085153">
-sign up
+sign up<img src="https://github.com/user-attachments/assets/f51a96ad-41b0-4b5b-80b1-99a2ee4e3157">
+       <img src="https://github.com/user-attachments/assets/e0e6404d-0625-4a2b-afcf-019999d35911">
+       <img src="https://github.com/user-attachments/assets/fb982658-a119-4386-9f6d-5cd1b5ff6c84">
 categories
+
 health articles
+
+search bar
 
 ## Main Features | الميزات الرئيسية
 
@@ -75,4 +80,8 @@ Image and Video Integration: Visual representation of products.
 Quick Search Functionality: Quickly find products.
 
 Device Compatibility: Responsive design works on desktops and smartphones.
+
+## videos 
+https://github.com/user-attachments/assets/6c0e065a-bc57-4b3e-8d53-6aebb74445c3
+
 
