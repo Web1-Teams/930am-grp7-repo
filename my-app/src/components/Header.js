@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import SearchProducts from './SearchProducts';
 
 
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
           <Link to="/Amal">sign up</Link>
         </nav>
         <div className="search-bar">
-          <input type="text" placeholder="Search for products..." />
+          <SearchProducts />
         </div>
       </div>
     </header>

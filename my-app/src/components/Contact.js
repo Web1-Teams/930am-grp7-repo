@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import'./design/contact.css';
+import'./design/Contact.css';
 const Contact = () => {
   return (
     <div className="contact">
